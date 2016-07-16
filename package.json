@@ -14,7 +14,8 @@
     "babel-preset-stage-0": "^6.5.0"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "babel": {
     "presets": [
