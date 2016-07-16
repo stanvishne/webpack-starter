@@ -18,7 +18,8 @@ var config = {
       loaders: [
         {
           test: /\.js$/,
-          loaders: ['babel']      // note that specifying 'babel' or 'babel-loader' is equivalent for Webpack
+          exclude: /node_modules/,
+          loaders: ['react-hot', 'babel-loader']      // note that specifying 'babel' or 'babel-loader' is equivalent for Webpack
         },
         {
           test: /\.css$/,

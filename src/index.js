@@ -1,4 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import Greeting from './greeting';
+import EasaprApp from './easapr.js';
 
-var greet = require('./greet');   // Import the greet function
 
-greet('Webpack');
+ReactDOM.render(
+  <EasaprApp name=' react 0.14'/>,
+  document.getElementById('easapr-app')
+);
