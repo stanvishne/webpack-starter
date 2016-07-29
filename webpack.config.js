@@ -22,6 +22,11 @@ var config = {
           loaders: ['react-hot', 'babel-loader']      // note that specifying 'babel' or 'babel-loader' is equivalent for Webpack
         },
         {
+          test: /\.jsx$/,
+          exclude: /node_modules/,
+          loaders: ['react-hot', 'babel-loader']      // note that specifying 'babel' or 'babel-loader' is equivalent for Webpack
+        },
+        {
           test: /\.css$/,
           loaders: ['style', 'css'] // Note that the order is important here, it means that 'style-loader' will be applied to the ouput of 'css-loader'
         },
