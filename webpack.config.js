@@ -3,10 +3,10 @@ var SRC = path.join(__dirname, 'src/');
 var NODE_MODULES = path.join(__dirname, 'node_modules/');
 
 var config = {
-    entry: './src',               // entry point
+    entry: './src/index.js',               // entry point
     output: {                     // output folder
         path: './dist',           // folder path
-        filename: 'my-app.js'     // file name
+        filename: 'bundle.js'     // file name
     },
     resolve: {
         root: [SRC, NODE_MODULES],                  // root folders for Webpack resolving, so we can now call require('greet')
@@ -30,7 +30,7 @@ var config = {
         {
           test: /\.(css|scss)$/,
           loaders: ['style', 'css?sourceMap', 'sass?sourceMap'] // Note that the order is important here, it means that 'style-loader' will be applied to the ouput of 'css-loader'
-        },        
+        },
         {
           test: /\.(eot|svg|ttf|woff|woff2)$/,
           loader: 'file?name=public/fonts/[name].[ext]'
