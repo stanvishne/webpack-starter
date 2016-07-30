@@ -6,7 +6,7 @@ class EasaprApp extends React.Component {
   render(){
     return(
       <div>
-      hello easapr {this.props.name}
+      {this.props.name}
       <MyForm/>
       </div>
     )
